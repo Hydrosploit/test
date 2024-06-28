@@ -1,0 +1,7 @@
+function Funcs:CreateHighlight()
+	for i, v in pairs(Players:GetChildren()) do
+		if v ~= game.Players.LocalPlayer and v.Character and not v.Character:FindFirstChild("Highlight") then
+			Instance.new("Highlight", v.Character)
+		end
+	end
+end
